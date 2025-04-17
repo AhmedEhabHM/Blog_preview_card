@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  background-color: #f5d04e;
+  height: 95%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+/* How to make : box-shadow:
+     offset-x and offset-y and blur-radius and spread-radius and color; */
+
+.content {
+  width: 25%;
+  height: 77%;
+  background-color: white;
+  box-shadow: 10px 10px 2px rgba(0, 0, 0, 1);
+  border: solid black 1px;
+  border-radius: 15px;
+  padding: 20px;
+}
+h1 {
+  width: 30%;
+  height: 25px;
+  background-color: #f5d04e;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 14px;
+}
+h2 {
+  font-size: 12px;
+  font-weight: 500;
+}
+h3 {
+  font-weight: 800;
+}
+.p_1 {
+  font-weight: 500;
+  color: #616161;
+  font-size: 14px;
+}
+.p_2 {
+  font-size: 12px;
+  font-weight: 800;
+}
+h1,
+h2,
+h3,
+p,
+.about {
+  margin: 12px;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.attribution {
+  background-color: #f5d04e;
+  height: 5%;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  font-size: 11px;
+  text-decoration: none;
+}
+.attribution a:link {
+  color: black;
+}
+.attribution a:visited {
+  color: black;
+}
+
+@media(max-width: 900px){
+    *{
+font-size: x-small;
+    }
+    h1{
+        width: fit-content;
+    }
+    h1,h2,h3{
+        font-size: xx-small;
+    }
+    .content{
+        padding: 5px;
+    }
+}
+@media(min-width: 450px){
+    .content{
+        height: fit-content;
+    }
+}
+
